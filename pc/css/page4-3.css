@@ -1,0 +1,143 @@
+html {}
+
+.circle-big-light {
+    width: 320px;
+    height: 320px;
+    background: url(../imgs/ico/circle-big-light.png) no-repeat center;
+    background-size: 320px 320px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-left: -160px;
+    animation: blingbing 0.5s linear infinite alternate;
+}
+
+.complaint-count {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.table-box {
+    width: 336px;
+    height: 266px;
+    background: url(../imgs/ico/table-card.png) no-repeat center;
+    background-size: 336px 266px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.table-name {
+    font-size: 18px;
+    position: absolute;
+    top: 1px;
+    left: 32px;
+}
+
+
+/* 表格列表样式 */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0;
+    width: 98%;
+    height: 90%;
+    position: absolute;
+    left: 1%;
+    top: 10%;
+}
+
+.fixedThead {
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+
+.fixedThead tr th {
+    height: 50px!important;
+    width: 100px;
+}
+
+.fixedThead tr th:first-child {
+    height: 50px!important;
+    width: 150px;
+}
+
+.fixedThead tr th:last-child {
+    height: 50px!important;
+    width: 200px;
+}
+
+.scrollTbody {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 187px;
+    font-size: 12px;
+}
+
+.scrollTbody tr:nth-of-type(1) {
+    color: #F5A623;
+}
+
+.scrollTbody td {
+    width: 100px;
+    height: 61px;
+}
+
+.scrollTbody tr td:first-child {
+    width: 150px;
+}
+
+.scrollTbody tr td:last-child {
+    text-align: left;
+    padding-right: 3px;
+    width: 200px;
+}
+
+.page43-circle-group {
+    display: inline-block;
+    width: 96%;
+    position: absolute;
+    top: 11%;
+    left: 2%;
+    height: 86%;
+}
+
+.page43-circle-group li {
+    float: left;
+    list-style: none;
+    width: 20%;
+    height: 33%;
+}
+
+.page43-circle-group li:nth-of-type(3) {
+    float: right;
+}
+
+.page43-circle-group li:nth-of-type(4) {
+    float: right;
+}
+
+.page43-circle-group li:nth-of-type(5) {
+    clear: both;
+}
+
+.page43-circle-group li:nth-of-type(7) {
+    float: right;
+}
+
+.page43-circle-group li:nth-of-type(8) {
+    float: right;
+}
+
+.page43-circle-group li:nth-of-type(9) {
+    clear: both;
+}
+
+.page43-circle-group li:nth-of-type(11) {
+    width: 20%;
+}

@@ -1,0 +1,334 @@
+/* kpi页面样式 */
+
+.kpiTop3 {
+    width: 600px;
+    height: 100%;
+    float: left;
+}
+
+.kpiTop3 ul {
+    width: 100%;
+    height: 100%;
+}
+
+.kpiTop3 ul li {
+    width: 600px;
+    height: 300px;
+}
+
+.kpi-card {
+    width: 489px;
+    height: 320px;
+    background: url(../imgs/kpi-box1.png) no-repeat center;
+    background-size: 489px 286px;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 57px;
+}
+
+.kpitop-title {
+    margin-top: 27px;
+    margin-left: 20px;
+    color: #fff;
+    margin-bottom: 17px;
+    font-weight: 700;
+}
+
+.kpitop-info {
+    width: 50%;
+    height: 250px;
+    float: left;
+    position: relative;
+}
+
+.kpitop-info li {
+    list-style: none;
+    float: left;
+    width: 50%;
+}
+
+.kpitop-ball {
+    position: relative;
+    width: 100%;
+    height: 155px;
+    float: left;
+    color: #40B7FC;
+}
+
+.kpitop-ballimg {
+    animation: circle-a 2s linear infinite alternate;
+}
+
+.kpitop-ball img {
+    position: absolute;
+    left: 20%;
+}
+
+.kpitop-ball .manyidu {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 60px;
+    margin-left: -30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.kpitop-ball .manyidu-number {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    width: 100px;
+    margin-left: -50px;
+    text-align: center;
+    font-size: 30px;
+    transform: scale3d(0.6, 1, 1);
+    font-weight: 700;
+}
+
+.kpitop-ball span:nth-of-type(1) {
+    display: inline-block;
+}
+
+.kpitop-ball span:nth-of-type(2) {
+    display: inline-block;
+}
+
+.kpitop-ball img:nth-of-type(1) {
+    width: 159px;
+    height: auto;
+}
+
+.kpitop-line {
+    position: absolute;
+    color: #fff;
+    left: 41px;
+    bottom: 41px;
+    width: 155px;
+}
+
+.kpitop-line-active {
+    height: 8px;
+    /* background: #50E3C2; */
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    background: url(../imgs/ico/line-active.png) repeat-x center;
+}
+
+.line-number {
+    font-size: 20px;
+    color: #50E3C2;
+    position: absolute;
+    right: -2px;
+    transform: scale3d(0.6, 1, 1);
+    font-weight: 700;
+}
+
+
+/* 当前月kpi */
+
+.kpimonth {
+    width: 1251px;
+    height: 917px;
+    background: url(../imgs/kpi-box2.png) no-repeat center;
+    background-size: 1251px 917px;
+    margin-top: 100px;
+    float: left;
+}
+
+.kpimonth-tilte {
+    font-size: 24px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.kpimonth-list {
+    width: 850px;
+    height: 100%;
+    float: left;
+}
+
+.kpimonth-list li {
+    width: 50%;
+    list-style: none;
+    float: left;
+    margin-bottom: 25px;
+}
+
+.kpimonth-card {
+    position: relative;
+    width: 375px;
+    margin: 0 auto;
+}
+
+.kpimonth-card .month-name {
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.kpimonth-card .img1 {
+    position: relative;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    width: 260px;
+}
+
+.kpimonth-ball {
+    width: 100px;
+    height: 100px;
+    background: url(../imgs/ico/ball2.png) no-repeat center;
+    background-size: 100%;
+    float: left;
+    margin-right: 10px;
+}
+
+.kpimonth-line-group {
+    float: left;
+    width: 150px;
+    height: 100px;
+    position: relative;
+}
+
+.kpimonth-line {
+    position: relative;
+    color: #fff;
+}
+
+.kpimonth-line .line-number {
+    margin-left: 15px!important;
+    font-size: 20px;
+    color: #50E3C2;
+}
+
+.kpimonth-ball p:nth-of-type(1) {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #40B7FC;
+    letter-spacing: -0.16px;
+    width: 100px;
+    text-align: center;
+}
+
+.kpimonth-ball p:nth-of-type(2) {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #50E3C2;
+    text-align: left;
+    transform: scale3d(0.6, 1, 1);
+    font-weight: 700;
+    width: 100px;
+    text-align: center;
+}
+
+.big-chart {
+    float: left;
+    width: 400px;
+}
+
+.big-chart-item {
+    width: 320px;
+    height: 320px;
+    margin: 40px 40px 100px;
+    position: relative;
+}
+
+.big-chart-item img {
+    position: absolute;
+}
+
+.big-chart-item img:nth-of-type(1) {
+    left: 0;
+    top: 0;
+    animation: circle-b 15s linear infinite;
+}
+
+.big-chart-item img:nth-of-type(2) {
+    left: 20px;
+    top: 25px;
+    animation: circle-rotate 17s linear infinite;
+}
+
+.big-chart-item img:nth-of-type(3) {
+    left: 70px;
+    top: 75px;
+    animation: circle-b 19s linear infinite;
+}
+
+.big-chart-item2 img:nth-of-type(1) {
+    left: 0;
+    top: 0;
+    animation: circle-rotate 15s linear infinite;
+}
+
+.big-chart-item2 img:nth-of-type(2) {
+    left: 20px;
+    top: 25px;
+    animation: circle-b 17s linear infinite;
+}
+
+.big-chart-item2 img:nth-of-type(3) {
+    left: 70px;
+    top: 75px;
+    animation: circle-rotate 19s linear infinite;
+}
+
+.big-chart-item:nth-of-type(2) {
+    margin: 0px 40px!important;
+}
+
+.chart-text {
+    font-size: 28px;
+    color: #FFFFFF;
+    letter-spacing: -0.33px;
+}
+
+.big-chart-name {
+    position: absolute;
+    top: 107px;
+    width: 320px;
+    text-align: center;
+}
+
+.chart-number {
+    font-size: 48px;
+    color: #50E3C2;
+    transform: scale3d(0.6, 1, 1);
+    font-weight: 700;
+}
+
+@keyframes circle-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes circle-b {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes circle-a {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}

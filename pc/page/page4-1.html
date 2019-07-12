@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="stylesheet" href="../css/page4-1.css">
+    <title>报事预警</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="page-wrap" id="app41">
+            <div class="title">报事预警</div>
+            <ul class="page41-linechart-group">
+                <li>
+                    <div class="linechart-box">
+                        <div class="linechart-title">
+                            <img src="../imgs/ico/ico-chart-small.png" style="width: 15px;" alt=""> 发生情况
+                            <span class="linechart-count">总计<span id="total_occurrence">{{totalDate.total}}</span>(件)</span>
+                            <div class="linechart" id="linechart1">
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="linechart-box">
+                        <div class="linechart-title">
+                            <img src="../imgs/ico/ico-chart-small.png" style="width: 15px;" alt=""> 响应超时
+                            <span class="linechart-count"><span id="total_timeOut">{{totalDate.timeOutRate | filterString }}%</span></span>
+                            <div class="linechart" id="linechart2">
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="linechart-box">
+                        <div class="linechart-title">
+                            <img src="../imgs/ico/ico-chart-small.png" style="width: 15px;" alt=""> 跟进超时
+                            <span class="linechart-count"><span id="total_followupTimeout">{{totalDate.followupTimeoutRate | filterString }}%</span></span>
+                            <div class="linechart" id="linechart3">
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="linechart-box">
+                        <div class="linechart-title">
+                            <img src="../imgs/ico/ico-chart-small.png" style="width: 15px;" alt=""> 完结率
+                            <span class="linechart-count"><span id="total_completionRate">{{totalDate.completionRate | filterString }}%</span></span>
+                            <div class="linechart" id="linechart4">
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="page41-circlechart-group">
+                <li v-for="(item,index) in areaList">
+                    <div class="circlechart-box">
+                        <div class="circlechart-title"><img src="../imgs/ico/ico-probar.png" style="width:15px;margin-right: 5px;" alt="">{{item.areaName}}</div>
+                        <div class="circle-card">
+                            <div>发生情况(件)</div>
+                            <div>{{item.occurrence}}</div>
+                        </div>
+                        <div class="circle-card">
+                            <div>响应超时(件)</div>
+                            <div>{{item.timeOut}}</div>
+                        </div>
+                        <div class="circle-card">
+                            <div>跟进超时(件)</div>
+                            <div>{{item.followupTimeout}}</div>
+                        </div>
+
+                        <div class="circlechart">
+                            <circle-progress :percent="item.completionRate.replace('%','')"></circle-progress>
+                            <div>完结率</div>
+                            <div>{{item.completionRate | filterString }}%</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/echarts.min.js"></script>
+    <script src="../lib/vue.min.js"></script>
+    <script src="../js/chart.js"></script>
+
+    <script src="../components/circle-progress.js"></script>
+    <script src="../js/page.js"></script>
+    <script>
+        $(document).ready(function() {
+            page41();
+        });
+    </script>
+</body>
+
+</html>

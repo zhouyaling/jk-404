@@ -1,0 +1,396 @@
+/* 项目接入明细页面样式 */
+
+.page21-box {
+    width: 100%;
+    height: 100%;
+    background: url(../imgs/map-back.png) no-repeat center;
+    background-size: 90% auto;
+    position: absolute;
+}
+
+.map {
+    width: 1087px;
+    height: 840px;
+    background: url(../imgs/map.png) no-repeat center;
+    background-size: 1087px 840px;
+    margin-top: 7%;
+    margin-left: 8%;
+    position: relative;
+}
+
+.map-ledge {
+    position: absolute;
+    left: 1%;
+    bottom: 1%;
+}
+
+.map-ledge li {
+    list-style: none;
+    height: 65px;
+    line-height: 65px;
+    font-size: 22px;
+    color: #EDEDED;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+}
+
+.map-ledge li p {
+    display: inline-block;
+}
+
+.map-ledge li span {
+    width: 120px;
+    display: inline-block;
+    font-size: 40px;
+    color: #50E3C2;
+    text-align: right;
+}
+
+.map-ledge img:nth-last-of-type(1) {
+    width: 34px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.map-ledge img:nth-last-of-type(2) {
+    width: 39px;
+    height: 32px;
+    margin-right: 15px;
+}
+
+.map-ledge img:nth-last-of-type(3) {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+}
+
+.projects {
+    position: absolute;
+    right: 5%;
+    top: 13%;
+}
+
+.project-bar {
+    width: 491px;
+    height: 46px;
+    background: url(../imgs/project-bar.png) no-repeat center;
+    background-size: 491px 46px;
+    margin-bottom: 2%;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    line-height: 46px;
+    display: flex;
+    align-items: center;
+}
+
+.project-bar img {
+    width: 15px;
+    margin-left: 25px;
+    margin-right: 7px;
+}
+
+.project-list1 {
+    width: 491px;
+    height: 557px;
+    background: url(../imgs/project-box.png) no-repeat center;
+    background-size: 491px 557px;
+}
+
+.project-list2 {
+    width: 491px;
+    height: 177px!important;
+    background: url(../imgs/project-box1.png) no-repeat center;
+    background-size: 491px 177px;
+}
+
+
+/* 项目列表样式 */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0;
+}
+
+.fixedThead {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #3987FF;
+    height: 44px;
+}
+
+.scrollTbody {
+    display: block;
+    height: 505px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.table td {
+    width: 250px;
+}
+
+.table th {
+    width: 300px;
+    line-height: 42px;
+    color: #364E92;
+}
+
+.project-list1 .table tr:nth-of-type(1) {
+    color: #50E3C2!important;
+}
+
+.project-list2 .table tr:nth-of-type(1) {
+    color: #FF8E9C!important;
+}
+
+.table tr {
+    line-height: 42px;
+}
+
+.scrollTbody tr td:nth-of-type(2) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 145px!important;
+}
+
+
+/* 地图样式 */
+
+.Z-map {
+    position: relative;
+    width: 1087px;
+    height: 840px;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0.05px;
+}
+
+.Z-map li {
+    position: absolute;
+    list-style: none;
+    text-align: center;
+}
+
+.Z-map li .map-p-img {
+    animation: showPoint 1s linear infinite;
+}
+
+.map-p {
+    width: 60px;
+}
+
+.map-p img {
+    width: 45px;
+}
+
+@keyframes showPoint {
+    0% {
+        transform: scale3d(1, 1, 1)
+    }
+    50% {
+        transform: scale3d(1.2, 1.2, 1)
+    }
+    100% {
+        transform: scale3d(1, 1, 1)
+    }
+}
+
+.Z-SF1 {
+    top: 208px;
+    left: 245px;
+}
+
+.Z-SF2 {
+    top: 414px;
+    left: 216px;
+}
+
+.Z-SF3 {
+    top: 320px;
+    left: 440px;
+}
+
+.Z-SF4 {
+    top: 370px;
+    left: 370px;
+}
+
+.Z-SF5 {
+    top: 290px;
+    left: 550px;
+}
+
+.Z-SF6 {
+    top: 364px;
+    left: 547px;
+}
+
+.Z-SF7 {
+    top: 517px;
+    left: 506px;
+}
+
+.Z-SF8 {
+    top: 661px;
+    left: 478px;
+}
+
+.Z-SF9 {
+    top: 349px;
+    right: 369px;
+}
+
+.Z-SF10 {
+    top: 424px;
+    right: 415px;
+}
+
+.Z-SF11 {
+    top: 508px;
+    right: 347px;
+}
+
+.Z-SF12 {
+    /* top: 511px;
+    right: 430px; */
+    top: 527px;
+    right: 447px;
+}
+
+.Z-SF13 {
+    top: 598px;
+    left: 572px;
+}
+
+.Z-SF14 {
+    top: 684px;
+    left: 605px;
+}
+
+.Z-SF15 {
+    top: 288px;
+    right: 288px;
+}
+
+.Z-SF16 {
+    top: 327px;
+    right: 320px;
+}
+
+.Z-SF17 {
+    top: 434px;
+    right: 333px;
+}
+
+.Z-SF18 {
+    top: 575px;
+    right: 342px;
+}
+
+.Z-SF19 {
+    top: 669px;
+    right: 326px;
+    z-index: 11;
+}
+
+.Z-SF20 {
+    top: 306px;
+    right: 280px;
+}
+
+.Z-SF21 {
+    top: 368px;
+    right: 259px;
+}
+
+.Z-SF22 {
+    top: 440px;
+    right: 225px;
+}
+
+.Z-SF23 {
+    top: 467px;
+    right: 265px;
+}
+
+.Z-SF24 {
+    top: 479px;
+    right: 176px;
+}
+
+.Z-SF25 {
+    top: 533px;
+    right: 198px;
+}
+
+.Z-SF26 {
+    top: 567px;
+    right: 274px;
+}
+
+.Z-SF27 {
+    top: 596px;
+    right: 214px;
+}
+
+.Z-SF28 {
+    top: 110px;
+    right: 120px;
+}
+
+.Z-SF29 {
+    top: 190px;
+    right: 130px;
+}
+
+.Z-SF30 {
+    top: 245px;
+    right: 187px;
+}
+
+.Z-SF31 {
+    top: 646px;
+    right: 164px;
+}
+
+.Z-SF32 {
+    top: 685px;
+    right: 260px;
+}
+
+.Z-SF33 {
+    top: 703px;
+    right: 290px;
+}
+
+.Z-SF34 {
+    top: 759px;
+    right: 389px;
+}
+
+.Z-SF121 {
+    top: 450px;
+    right: 370px;
+}
+
+.map-p-img {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background: url(../imgs/ico/point-s.png) no-repeat center;
+    background-size: 40px auto;
+}
+
+.map-p-img.active {
+    width: 62px;
+    height: 62px;
+    background: url(../imgs/ico/point-big.png) no-repeat center;
+    background-size: 62px auto;
+}

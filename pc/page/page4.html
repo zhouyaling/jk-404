@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <title>模块一</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .page {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .page iframe {
+            width: 1920px;
+            height: 1080px;
+            transform: scale3d(0.5, 0.5, 1);
+            margin-top: -270px;
+            margin-left: -480px;
+        }
+        
+        .swiper-container,
+        .swiper-wrapper,
+        .swiper-slide {
+            width: 100%!important;
+            height: 100%!important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="swiper-container swiper-container1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <iframe src="page4-1.html" frameborder="0"></iframe>
+                </div>
+                <div class="swiper-slide">
+                    <iframe src="page4-2.html" frameborder="0"></iframe>
+                </div>
+                <div class="swiper-slide">
+                    <iframe src="page4-3.html" frameborder="0"></iframe>
+                </div>
+                <div class="swiper-slide">
+                    <iframe src="page4-4.html" frameborder="0"></iframe>
+                </div>
+                <div class="swiper-slide">
+                    <iframe src="page4-5.html" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../lib/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container1', {
+            autoplay: true,
+            speed: 1000,
+            loop: true,
+            autoplay: 60000,
+            effect: 'fade',
+            onSlideChangeEnd: function(swiper) {
+                localStorage.setItem("currIndex", swiper.activeIndex);
+            }
+        })
+    </script>
+</body>
+
+</html>

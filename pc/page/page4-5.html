@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>重点报事</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="stylesheet" href="../css/page4-4.css">
+</head>
+
+<body>
+    <div class="page" id="app45">
+        <div class="page-wrap">
+            <div class="title">重点报事</div>
+            <div class="circle-box">
+                <div class="circle-big-number">
+                    <div><span class="complaint-day">60</span>天</div>
+                </div>
+                <div class="triangle-down"></div>
+            </div>
+            <ul class="page44-circle-group">
+                <li v-for="(item,index) in areaList" v-if="index<13">
+                    <div class="page44-table-box">
+                        <div class="table-name"><img src="../imgs/ico/ico-probar.png" alt="">{{item.areaName}}</div>
+                        <table class="table" align="center">
+                            <thead class="fixedThead" align="center">
+                                <tr>
+                                    <th>项目</th>
+                                    <th>超时</th>
+                                    <th>报事内容</th>
+                                </tr>
+                            </thead>
+                            <tbody class="scrollTbody" align="center">
+                                <tr v-for="itemchild in item.projectList">
+                                    <td>{{itemchild.projectName}}</td>
+                                    <td>{{itemchild.timeoutNum}}</td>
+                                    <td>{{itemchild.content}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/vue.min.js"></script>
+    <script src="../js/page.js"></script>
+    <script>
+        $(document).ready(function() {
+            page45();
+        });
+    </script>
+</body>
+
+</html>

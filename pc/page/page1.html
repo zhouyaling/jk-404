@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="stylesheet" href="../css/page1.css">
+    <title>年云服务中心年度目标</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="page-wrap">
+            <div class="title"><span id="year"></span>年云服务中心年度目标</div>
+            <ul class="page1-group">
+                <li>
+                    <div class="linechart-box">
+                        <img src="../imgs/ico/ico-manyidu.png" alt="">
+                        <div>满意度</div>
+                        <canvas id="chart-manyidu" style="width:500px;height: 400px;"></canvas>
+                        <ul class="tip-group" id="tip-manyidu">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="linechart-box">
+                        <img src="../imgs/ico/ico-jietong.png" alt="">
+                        <div>接通率</div>
+                        <canvas id="chart-jietong" style="width:500px;height: 400px;"></canvas>
+                        <ul class="tip-group" id="tip-jietong">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="linechart-box">
+                        <img src="../imgs/ico/ico-xiaoneng.png" alt="">
+                        <div>人均能效</div>
+                        <canvas id="chart-nengxiao" style="width:500px;height: 400px;"></canvas>
+                        <ul class="tip-group" id="tip-xiaoneng">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/echarts.min.js"></script>
+    <script src="../js/chart.js"></script>
+    <script src="../js/page.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#year').html(new Date().getFullYear());
+            page1();
+        });
+    </script>
+</body>
+
+</html>

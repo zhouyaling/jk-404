@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>投诉预警</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="stylesheet" href="../css/page4-2.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="page-wrap" id="app42">
+            <div class="title">投诉预警</div>
+            <div class="circle-big">
+                <p>总量</p>
+                <p><span class="complaint-count color-pink">{{total}}</span>件</p>
+            </div>
+            <ul class="page42-circle-group">
+                <li v-for="(item,index) in areaList" v-if="index<13">
+                    <div class="circle-box">
+                        <div class="circle-box-2"></div>
+                        <div class="circle-box-3"></div>
+                        <div class="circle-content">
+                            <p>{{item.areaName}}</p>
+                            <p>异常报事</p>
+                            <p><span class="color-pink">{{item.count}}</span>件</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/vue.min.js"></script>
+    <script src="../js/page.js"></script>
+    <script>
+        $(document).ready(function() {
+            page42();
+        });
+    </script>
+</body>
+
+</html>

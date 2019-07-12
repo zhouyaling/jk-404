@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>投诉预警</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/page.css">
+    <link rel="stylesheet" href="../css/page4-3.css">
+</head>
+
+<body>
+    <div class="page">
+        <div class="page-wrap" id="app43">
+            <div class="title">投诉预警</div>
+            <div class="circle-big-light">
+            </div>
+            <ul class="page43-circle-group">
+                <li v-for="(item,index) in areaList" v-if="index<13">
+                    <div class="table-box">
+                        <div class="table-name">{{item.areaName}}</div>
+                        <table class="table" align="center">
+                            <thead class="fixedThead" align="center">
+                                <tr>
+                                    <th>项目</th>
+                                    <th>专业</th>
+                                    <th>分类</th>
+                                    <th>内容</th>
+                                </tr>
+                            </thead>
+                            <tbody id="project-list1" class="scrollTbody" align="center">
+                                <tr v-for="itemchild in item.projectList">
+                                    <td>{{itemchild.projectName}}</td>
+                                    <td>{{itemchild.major}}</td>
+                                    <td>{{itemchild.classification}}</td>
+                                    <td>{{itemchild.content | filterContent}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/vue.min.js"></script>
+    <script src="../js/page.js"></script>
+    <script>
+        $(document).ready(function() {
+            page43();
+        });
+    </script>
+</body>
+
+</html>

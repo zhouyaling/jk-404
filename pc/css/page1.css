@@ -1,0 +1,170 @@
+/* .page-special {
+    width: 100%;
+    height: 100%;
+    background: url(../imgs/p1.png) no-repeat top;
+    background-size: 100% auto;
+    position: relative;
+}
+ */
+
+.ico-group1 img,
+.ico-group2 img,
+.ico-group3 img {
+    width: 120px;
+    height: auto;
+}
+
+.back-img {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.ico-group1 {
+    position: absolute;
+    left: 5.8%;
+    top: 37%;
+}
+
+.ico-group1 li {
+    list-style: none;
+    float: left;
+    width: 170px;
+    text-align: center;
+}
+
+.ico-group1 li {
+    animation: animateA 1s linear infinite alternate;
+}
+
+.ico-group2 {
+    position: absolute;
+    left: 36.8%;
+    top: 37%;
+}
+
+.ico-group2 li {
+    list-style: none;
+    float: left;
+    width: 170px;
+    text-align: center;
+}
+
+.ico-group2 li {
+    animation: animateB 1s linear infinite alternate;
+}
+
+.ico-group3 {
+    position: absolute;
+    left: 67.7%;
+    top: 37%;
+}
+
+.ico-group3 li {
+    list-style: none;
+    float: left;
+    width: 170px;
+    text-align: center;
+}
+
+.ico-group3 li :nth-of-type(1) {
+    animation: animateA 1s linear infinite alternate;
+}
+
+@keyframes animateA {
+    0% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animateB {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+.page1-group {
+    width: 1711px;
+    height: 833px;
+    position: absolute;
+    top: 12%;
+    left: 5.5%;
+    background: url(../imgs/map-back.png) no-repeat center;
+    background-size: 1711px 833px;
+}
+
+.page1-group li {
+    float: left;
+    list-style: none;
+    width: 33%;
+    height: 100%;
+    border-right: 1px solid #2C395B;
+}
+
+.page1-group li:last-child {
+    border-right: none!important;
+}
+
+.linechart-box {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 7%;
+    height: 100%;
+    position: relative;
+}
+
+.linechart-box canvas {
+    position: absolute;
+    left: 0;
+    top: 47%;
+    margin-left: 27px!important;
+}
+
+.linechart-box img {
+    width: 91px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.tip-group {
+    position: absolute;
+    top: 26%;
+    left: 0%;
+    width: 500px;
+    text-align: center;
+    margin-left: 27px;
+}
+
+.tip-group li {
+    width: 33%;
+    float: left;
+    list-style: none;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-right: none!important;
+    animation: big-circle 1s linear infinite alternate;
+}
+
+.tip-group li:nth-of-type(1) {
+    background: url(../imgs/ico/ico-tip1.png) no-repeat center;
+    background-size: 120px 136px;
+}
+
+.tip-group li:nth-of-type(2) {
+    background: url(../imgs/ico/ico-tip2.png) no-repeat center;
+    background-size: 120px 136px;
+}
+
+.tip-group li:nth-of-type(3) {
+    background: url(../imgs/ico/ico-tip3.png) no-repeat center;
+    background-size: 120px 136px;
+}

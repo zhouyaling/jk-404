@@ -1,0 +1,92 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        color: #fff;
+        font-family: "Microsoft YaHei";
+    }
+    
+    .color-pink {
+        color: #FF70A8!important;
+    }
+    
+    .color-green {
+        color: #50E3C2!important;
+    }
+    
+    .color-gray {
+        color: #9B9B9B!important;
+    }
+    
+    .color-yellow {
+        color: #F5A623;
+    }
+    
+    .page {
+        width: 100%;
+        height: 100%;
+        background: #040C5A;
+        overflow: hidden;
+    }
+    
+    .page img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .title {
+        font-size: 36px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        text-align: center;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-top: 7px;
+        width: 450px;
+        margin-left: -245px;
+    }
+    
+    .page-wrap {
+        width: 100%;
+        height: 100%;
+        background: url(../imgs/back.png) no-repeat top;
+        background-size: 100% auto;
+        position: relative;
+    }
+    
+    @keyframes ball-circle-1 {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(36deg);
+        }
+    }
+    
+    @keyframes blingbing {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0.4;
+        }
+    }
+    
+    @keyframes big-circle {
+        0% {
+            transform: scale3d(1, 1, 1);
+        }
+        100% {
+            transform: scale3d(1.1, 1.1, 1);
+        }
+    }
