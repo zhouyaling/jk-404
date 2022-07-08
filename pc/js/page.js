@@ -480,7 +480,6 @@ function getKpiTop3() {
 var cityDateCache = [];
 
 function getProjectList() {
-    debugger;
     clearTimeout(timer1);
     $.ajax({
         type: "post",
